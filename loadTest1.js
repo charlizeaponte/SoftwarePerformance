@@ -2,13 +2,12 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export let options = {
-  stages: [
-    { duration: '30s', target: 10 },    // Ramp-up to 10 users
-    { duration: '30s', target: 100 },   // Ramp-up to 100 users
-    { duration: '30s', target: 1000 },  // Ramp-up to 1000 users
-    { duration: '60s', target: 1000 },  // Hold at 1000 users
-  
-  ]
+
+   //  duration: '30s', target: 10 ,    // Ramp-up to 10 users
+   // duration: '30s', target: 100 ,   // Ramp-up to 100 users
+   //  duration: '30s', target: 1000 ,  // Ramp-up to 1000 users
+     duration: '60s', target: 1000 ,  // Hold at 1000 users
+
 };
 
 export default function () {
