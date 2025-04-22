@@ -3,10 +3,10 @@ import { check, sleep } from 'k6';
 
 export let options = {
 
-   //  duration: '30s', target: 10 ,    // Ramp-up to 10 users
-   // duration: '30s', target: 100 ,   // Ramp-up to 100 users
-   //  duration: '30s', target: 1000 ,  // Ramp-up to 1000 users
-     duration: '60s', target: 1000 ,  // Hold at 1000 users
+   // duration: '30s', vus: 10 ,    // Ramp-up to 10 users
+   // duration: '30s', vus: 100 ,   // Ramp-up to 100 users
+    //duration: '30s',vus: 1000 ,  // Ramp-up to 1000 users
+     duration: '60s', vus: 1000 ,  // Hold at 1000 users
 
 };
 
